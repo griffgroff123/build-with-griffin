@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Build with Griffin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Build with Griffin</h1>
+    <nav id="nav-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#projects">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button id="nav-toggle" aria-label="Toggle navigation menu">☰</button>
+  </header>
+
+  <main>
+    <section class="contact-page">
+      <h2>Get in touch</h2>
+      <p class="hero-sub">Want a site like these for your business? Reach out — happy to talk through what you need.</p>
+
+      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">What are you looking for?</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Build with Griffin</p>
+  </footer>
+
+  <script src="js/nav-toggle.js"></script>
+</body>
+</html>
