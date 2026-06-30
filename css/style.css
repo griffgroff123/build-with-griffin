@@ -249,11 +249,16 @@ footer {
 .hero-logo {
   width: 72px;
   height: 72px;
+  min-width: 72px;
+  min-height: 72px;
+  max-width: 72px;
+  max-height: 72px;
   border-radius: 50%;
   object-fit: cover;
   border: 2px solid var(--line);
   margin-bottom: 24px;
   display: block;
+  overflow: hidden;
 }
 
 /* Why Me page */
