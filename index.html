@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Build with Griffin</title>
+  <title>Build with Griffin — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
   <header>
     <div class="header-brand">
-      <img src="gm-profile.png" alt="GM logo" class="header-logo">
+      <img src="gm-profile.png" alt="GM" class="header-logo">
       <h1>Build with Griffin</h1>
     </div>
     <nav id="nav-links">
@@ -23,59 +25,79 @@
   </header>
 
   <main>
+
     <section class="hero">
-      <img src="gm-profile.png" alt="GM logo" class="hero-logo">
-      <p class="eyebrow">Web developer</p>
-      <h2>I build real websites for real businesses.</h2>
-      <p class="hero-sub">Student web developer — I design and build clean, working websites from scratch: structure, styling, and the small details that make a site feel real.</p>
+      <img src="gm-profile.png" alt="GM" class="hero-logo">
+      <p class="eyebrow">Web Developer · Maple Valley, WA</p>
+      <h2>I build real websites for <em>real businesses.</em></h2>
+      <p class="hero-sub">Hand-coded from scratch — not a drag-and-drop template. Clean, fast, and actually finished.</p>
+      <a href="contact.html" class="hero-cta">Work with me →</a>
     </section>
 
     <section class="projects" id="projects">
+      <p class="section-label">Work</p>
       <h3>Projects</h3>
       <div class="project-grid">
 
-        <a href="https://griffgroff123.github.io/coffee-template/" class="project-card" target="_blank">
-          <span class="project-tag">Template</span>
+        <a href="https://griffgroff123.github.io/coffee-template/" class="project-card reveal" target="_blank">
+          <p class="project-num">01 / Template</p>
+          <span class="project-tag">Live site</span>
           <h4>Coffee shop site</h4>
-          <p>A reusable coffee shop website template — category tabs, reviews, and a contact form, built from scratch.</p>
+          <p>A reusable coffee shop template — spec-sheet menu, reviews, tabbed contact form. Built from scratch in HTML/CSS/JS.</p>
           <span class="project-link">View live site →</span>
         </a>
 
-        <a href="https://griffgroff123.github.io/plumbing-template/" class="project-card" target="_blank">
-          <span class="project-tag">Template</span>
+        <a href="https://griffgroff123.github.io/plumbing-template/" class="project-card reveal" target="_blank">
+          <p class="project-num">02 / Template</p>
+          <span class="project-tag">Live site</span>
           <h4>Plumbing company site</h4>
-          <p>A clean, trust-focused website template for a local service business — phone-first hero, trust signals, and a services list.</p>
+          <p>A clean, trust-focused template for a local service business — phone-first hero, trust signals, Why Us page.</p>
           <span class="project-link">View live site →</span>
         </a>
 
       </div>
     </section>
 
-    <section class="pricing">
-      <h3>Pricing</h3>
-      <div class="pricing-card">
-        <p class="pricing-range">$0 – $200</p>
-        <p class="pricing-note">Pricing depends on what you need — a simple site is on the lower end, more pages or custom features cost more. Reach out and we can figure out what's fair.</p>
+    <section class="pricing reveal">
+      <div class="pricing-left">
+        <p class="section-label">Pricing</p>
+        <h3>Fair price.<br>No surprises.</h3>
+        <p>A simple site is on the lower end. More pages or custom features cost more. Reach out and we'll figure out what's fair for your business.</p>
+      </div>
+      <div class="pricing-right">
+        <p class="pricing-range">$0–$200</p>
+        <a href="contact.html" class="pricing-cta">Get in touch →</a>
       </div>
     </section>
 
     <section class="how-i-work">
+      <p class="section-label">Process</p>
       <h3>How I work</h3>
-      <div class="work-row">
-        <div class="work-item">
-          <h4>Real structure</h4>
-          <p>Every site is built with clean, organized code — not a drag-and-drop builder.</p>
+      <div class="work-list">
+        <div class="work-row reveal">
+          <p class="work-num">01</p>
+          <div class="work-body">
+            <h4>Real code, not a builder</h4>
+            <p>Every site is hand-coded in HTML, CSS, and JavaScript — no Wix, no Squarespace, no drag-and-drop. That means faster sites and no platform lock-in.</p>
+          </div>
         </div>
-        <div class="work-item">
-          <h4>Built for the business</h4>
-          <p>Menus, hours, and contact info are easy to update without touching code.</p>
+        <div class="work-row reveal">
+          <p class="work-num">02</p>
+          <div class="work-body">
+            <h4>Built around your business</h4>
+            <p>Your menu, hours, phone number, and services — all in the right places, easy to update, and actually useful for customers finding you.</p>
+          </div>
         </div>
-        <div class="work-item">
-          <h4>Mobile-first</h4>
-          <p>Every site works cleanly on a phone, not just a laptop screen.</p>
+        <div class="work-row reveal">
+          <p class="work-num">03</p>
+          <div class="work-body">
+            <h4>Works on every screen</h4>
+            <p>Mobile-first by default. Most local business customers find you on a phone — so that's where the site needs to work best.</p>
+          </div>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
@@ -83,5 +105,6 @@
   </footer>
 
   <script src="js/nav-toggle.js"></script>
+  <script src="js/scroll-reveal.js"></script>
 </body>
 </html>
